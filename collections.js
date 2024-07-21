@@ -37,6 +37,23 @@ else{
     productlist[count].style.display = "block"
 }
 }
-
+var checkbox =document.getElementsByClassName("filter")
     })
+
+    checkboxbox.addEventListener("click:checked",function(){
+        var filterValue = event.target.value.toUpperCase()
+        
+        for(count =0; count<productlist.length; count = count+1)
+            {
+            var productname = productlist[count].querySelector("h1").textContent
+        
+            if(productname.toUpperCase()== filterValue){
+            productlist[count].style.display = "block"
+            }
+        else{
+            productlist[count].style.display = "none"
+        }
+        }
+        
+            })
   
